@@ -1,5 +1,5 @@
 <?php
 
-ini_set('memory_limit', '255M');
+$app = include __DIR__ . '/../src/App/bootstrap.php';
 
-echo ini_get('memory_limit');
+$app->run();
